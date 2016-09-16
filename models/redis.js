@@ -33,6 +33,12 @@ exports.throw = function(bottle,callback){
 }
 
 exports.pick = function(info,callback){
+  if (Math.random() <= 0.2) {
+    return callback({
+      code:0,
+      msg:"海星"
+    });
+  }
   var type = {
     all:Math.round(Math.random()),
     male:0,
@@ -44,7 +50,7 @@ exports.pick = function(info,callback){
       if (!bottleId) {
         return callback({
           code:0,
-          msg:"大海空空如也..."
+          msg:"海星"
         });
       }
       client.HGETALL(bottleId,function(err,bottle){
