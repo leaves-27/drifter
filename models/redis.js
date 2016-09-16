@@ -70,3 +70,24 @@ exports.pick = function(info,callback){
     });
   });
 }
+
+exports.throwBack = function(bottle,callback){
+  var type = {male:0,female:1};
+  var bottleId = Math.random().toString(16);
+
+  client.SELECT(type[bottle.type],function(){
+    client.HMSET(bottleId,bootle,function(err,result){
+      if (err) {
+        return callback({
+          code:0,
+          msg:"过会儿再试试吧！"
+        });
+      }
+      callback({
+        code:1,
+        msg:result
+      });
+      client.PEXPIRE(bottleId,bottle.time + 86400000 - Date.now());
+    });
+  });
+}
