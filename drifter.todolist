@@ -1,7 +1,7 @@
 使用Redis搭建漂流瓶服务器
- ☐ Redis： @high @started(16-09-15 13:07) @due(+)
- ☐ 漂流瓶： @critical 
- ☐ 讨厌的海星： @critical
+ ✔ Redis： @high @started(16-09-15 13:07) @due(+) @done (16-09-16 11:00) @lasted(21:53)
+ ✔ 漂流瓶： @critical  @done (16-09-16 11:00)
+ ✔ 讨厌的海星： @critical @done (16-09-16 11:01)
  ☐ 扔回海里： @critical
  ☐ 今天的瓶子已经用完啦： @critical
  ☐ 我的瓶子： @critical
@@ -58,8 +58,8 @@ Redis:
      ☐ ZREVRANGE：
 
 漂流瓶：
-  ☐ 接口设计：
-  ☐ 搭建应用：
+  ✔ 接口设计： @done (16-09-16 11:00)
+  ✔ 搭建应用： @done (16-09-16 11:00)
 讨厌的海星：
 扔回海里：
 今天的瓶子已经用完啦：

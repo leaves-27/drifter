@@ -1,5 +1,6 @@
 var redis = require("redis"),
-    client = redis.createClient();
+    client = redis.createClient(),
+    client2 = redis.createClient();
 
 exports.throw = function(bottle,callback){
   bottle.time = bottle.time || Date.now();
