@@ -4,8 +4,9 @@ var bodyParser = require("body-parser");
 var mongodb = require("./models/mongodb");
 
 var app = express();
-app.use(bodyParser());
-
+app.use(bodyParser.urlencoded({ extended: false }))  
+// parse application/json  
+app.use(bodyParser.json())  
 //扔一个漂流瓶
 app.post("/",function(req,res){
   if (!(req.body.owner && req.body.type && req.body.content)) {

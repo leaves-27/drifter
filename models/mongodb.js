@@ -66,7 +66,7 @@ exports.reply = function(_id,reply,callback){
     newBottle.bottle = _bottle.bottle;
     newBottle.message = _bottle.message;
 
-    if (newBottle.bottle.length ==== 1) {
+    if (newBottle.bottle.length === 1) {
       newBottle.bottle.push(_bottle.message[0][0]);
     }
     newBottle.message.push([reply.user,reply.time,reply.content]);

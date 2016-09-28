@@ -2,10 +2,10 @@
  ✔ Redis： @high @started(16-09-15 13:07) @due(+) @done (16-09-16 11:00) @lasted(21:53)
  ✔ 漂流瓶： @critical  @done (16-09-16 11:00)
  ✔ 讨厌的海星： @critical @done (16-09-16 11:01)
- ☐ 扔回海里： @critical
- ☐ 今天的瓶子已经用完啦： @critical
- ☐ 我的瓶子： @critical
- ☐ 女神，我们做朋友吧： @critical
+ ✔ 扔回海里： @critical @done (16-09-28 07:53)
+ ✔ 今天的瓶子已经用完啦： @critical @done (16-09-28 08:02)
+ ✔ 我的瓶子： @critical @done (16-09-28 08:23)
+ ✔ 女神，我们做朋友吧： @critical @done (16-09-28 10:09)
  ☐ 部署： @high 
 
 Redis:
